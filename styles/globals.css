@@ -54,3 +54,17 @@ body {
 
 
 
+.animationDropDown {
+  animation: animationDropDown 1s linear forwards;
+ }
+ 
+ @keyframes animationDropDown {
+   0% {height: 0px};
+   10% {height: 10%px};
+   20% {height: 30%px};
+   30% {height: 30%px};
+   40% {height: 40%px};
+   50% {height: 50%px};
+   100% {height: 100%px};
+ }
+ 

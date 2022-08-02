@@ -1,8 +1,8 @@
 .profileDisable {
-  @apply mt-3 p-2 shadow menu invisible opacity-0 rounded-box w-52 absolute top-10 bg-light_white right-0 transform scale-75 transition-all ease-in delay-100
+  @apply mt-3 p-2 shadow menu invisible opacity-0 rounded-box w-64 absolute top-10 bg-light_white right-0 transform scale-75 transition-all ease-in delay-100
 }
 .profileEnable {
-  @apply mt-3 p-2 shadow menu visible opacity-100 transform scale-100 transition-all ease-out delay-100  rounded-box w-52 absolute top-10 bg-light_white right-0 z-50
+  @apply mt-3  shadow menu rounded-none visible opacity-100 transform scale-100 transition-all ease-out delay-100   w-64 absolute top-10 bg-light_white right-0 z-50
 }
 
 .drawerMenu{

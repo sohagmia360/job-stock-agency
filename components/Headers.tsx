@@ -10,6 +10,12 @@ import { MdOutlineLogin } from "react-icons/md";
 import NavMenu from "../components/NavMenu";
 import { motion } from "framer-motion";
 import { FiMenu } from "react-icons/fi";
+import { RiDashboardLine } from "react-icons/ri";
+import { BiHandicap } from "react-icons/bi";
+import { FiUsers } from "react-icons/fi";
+import { AiOutlineStar } from "react-icons/ai";
+import { FaUserSecret } from "react-icons/fa";
+import { AiOutlineLogin } from "react-icons/ai";
 
 const subMenu: { name: string; path: string }[] = [
   { name: "sub menu 1", path: "/sub" },
@@ -24,7 +30,7 @@ interface drawerType {
 const Header: NextPage<drawerType> = ({ sideDrawer, setSideDrawer }) => {
   const [profile, setProfile] = useState<boolean>(false);
   const [active, setActive] = useState<boolean>(false);
-  const [navSticky , setNavSticky] = useState<boolean>(false)
+  const [navSticky, setNavSticky] = useState<boolean>(false);
   const handleProfile = () => {
     setProfile((prev) => !prev);
   };
@@ -43,24 +49,30 @@ const Header: NextPage<drawerType> = ({ sideDrawer, setSideDrawer }) => {
     }, [ref]);
   }
 
-  useEffect(()=>{
-    window.addEventListener('scroll', (e)=> {
-      if(window.scrollY >= 65){
-        setNavSticky(true)
-      }else{
-        setNavSticky(false) 
+  useEffect(() => {
+    window.addEventListener("scroll", (e) => {
+      if (window.scrollY >= 65) {
+        setNavSticky(true);
+      } else {
+        setNavSticky(false);
       }
-      console.log(window.scrollY)
-    })
-  },[])
+      console.log(window.scrollY);
+    });
+  }, []);
 
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef);
 
   return (
     <>
-      <div 
-      ref={wrapperRef} className={navSticky ? ` ${styles.animationHeder} z-10 shadow-md animate-[wiggle]    transition-all ease-in delay-150 bg-[#fff] px-1 sticky top-0` : `  shadow-md transition-all ease-in delay-150  bg-[#F3F5F0] px-1 `}>
+      <div
+        ref={wrapperRef}
+        className={
+          navSticky
+            ? ` ${styles.animationHeder} z-20 shadow-md   transition-all ease-in delay-150 bg-[#fff] px-1 sticky top-0`
+            : `  shadow-md transition-all ease-in delay-150  bg-[#F3F5F0] px-1 `
+        }
+      >
         <div className="navbar wContainer ">
           <div className="flex-1 cursor-pointer ">
             <a className=" flex items-center justify-center normal-case text-xl">
@@ -135,18 +147,43 @@ const Header: NextPage<drawerType> = ({ sideDrawer, setSideDrawer }) => {
                   profile ? styles.profileEnable : styles.profileDisable
                 }
               >
-                <li>
-                  <a className="justify-between">
-                    Profile
-                    <span className="badge">New</span>
+                <li  className="">
+                  <a className="">
+                    <span className="bg-[#F0F0F0] rounded-full p-2"><RiDashboardLine  className="text-xl" /></span>
+                    Dashboard
                   </a>
                 </li>
                 <li>
-                  <a>Settings</a>
+                  <a className="">
+                  <span className="bg-[#F0F0F0] rounded-full p-2"><BiHandicap  className="text-xl" /></span>
+                    Manage Jobs Post
+                  </a>
                 </li>
                 <li>
-                  <a>Logout</a>
+                  <a className="">
+                  <span className="bg-[#F0F0F0] rounded-full p-2"><FiUsers  className="text-xl" /></span>
+                    Manage Jobs 
+                  </a>
                 </li>
+                <li>
+                  <a className="">
+                  <span className="bg-[#F0F0F0] rounded-full p-2"><AiOutlineStar  className="text-xl" /></span>
+                    Bookmarks Jobs 
+                  </a>
+                </li>
+                <li>
+                  <a className="">
+                  <span className="bg-[#F0F0F0] rounded-full p-2"><FaUserSecret  className="text-xl" /></span>
+                    My Profile
+                  </a>
+                </li>
+                <li>
+                  <a className="">
+                  <span className="bg-[#F0F0F0] rounded-full p-2 rotate-[90deg]"><AiOutlineLogin  className="text-xl" /></span>
+                    Logout
+                  </a>
+                </li>
+             
               </ul>
             </div>
           </div>
