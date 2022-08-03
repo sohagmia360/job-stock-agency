@@ -56,7 +56,6 @@ const Header: NextPage<drawerType> = ({ sideDrawer, setSideDrawer }) => {
       } else {
         setNavSticky(false);
       }
-      console.log(window.scrollY);
     });
   }, []);
 
@@ -147,43 +146,54 @@ const Header: NextPage<drawerType> = ({ sideDrawer, setSideDrawer }) => {
                   profile ? styles.profileEnable : styles.profileDisable
                 }
               >
-                <li  className="">
+                <li className="">
                   <a className="">
-                    <span className="bg-[#F0F0F0] rounded-full p-2"><RiDashboardLine  className="text-xl" /></span>
+                    <span className="bg-[#F0F0F0] rounded-full p-2">
+                      <RiDashboardLine className="text-xl" />
+                    </span>
                     Dashboard
                   </a>
                 </li>
                 <li>
                   <a className="">
-                  <span className="bg-[#F0F0F0] rounded-full p-2"><BiHandicap  className="text-xl" /></span>
+                    <span className="bg-[#F0F0F0] rounded-full p-2">
+                      <BiHandicap className="text-xl" />
+                    </span>
                     Manage Jobs Post
                   </a>
                 </li>
                 <li>
                   <a className="">
-                  <span className="bg-[#F0F0F0] rounded-full p-2"><FiUsers  className="text-xl" /></span>
-                    Manage Jobs 
+                    <span className="bg-[#F0F0F0] rounded-full p-2">
+                      <FiUsers className="text-xl" />
+                    </span>
+                    Manage Jobs
                   </a>
                 </li>
                 <li>
                   <a className="">
-                  <span className="bg-[#F0F0F0] rounded-full p-2"><AiOutlineStar  className="text-xl" /></span>
-                    Bookmarks Jobs 
+                    <span className="bg-[#F0F0F0] rounded-full p-2">
+                      <AiOutlineStar className="text-xl" />
+                    </span>
+                    Bookmarks Jobs
                   </a>
                 </li>
                 <li>
                   <a className="">
-                  <span className="bg-[#F0F0F0] rounded-full p-2"><FaUserSecret  className="text-xl" /></span>
+                    <span className="bg-[#F0F0F0] rounded-full p-2">
+                      <FaUserSecret className="text-xl" />
+                    </span>
                     My Profile
                   </a>
                 </li>
                 <li>
                   <a className="">
-                  <span className="bg-[#F0F0F0] rounded-full p-2 rotate-[90deg]"><AiOutlineLogin  className="text-xl" /></span>
+                    <span className="bg-[#F0F0F0] rounded-full p-2 rotate-[90deg]">
+                      <AiOutlineLogin className="text-xl" />
+                    </span>
                     Logout
                   </a>
                 </li>
-             
               </ul>
             </div>
           </div>

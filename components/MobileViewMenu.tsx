@@ -48,10 +48,16 @@ const menuItemAnimation = {
 };
 
 
+  const handleShowSubDropDown = (e : any)=> {
+    console.log(e.target)
+    setOpenSubMenu((prev)=> !prev)
+  }
+
+
   return (
     <div className=" relative px-3 ">
         
-        <div onClick={()=> setOpenSubMenu((prev)=> !prev)} className="text-xl  cursor-pointer font-bold flex items-center justify-between  text-light_gray_white mb-2">{subM.menu}
+        <div onClick={handleShowSubDropDown} className="text-xl  cursor-pointer font-bold flex items-center justify-between  text-light_gray_white mb-2">{subM.menu}
         {
           openSubMenu ? <BiChevronRight  className="text-2xl text-light_gray_white"  /> :<BiChevronDown  className="text-2xl text-light_gray_white" />
         }

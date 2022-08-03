@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 import SideDrawer from '../components/SideDrawer'
 import Hero from '../section/Hero'
 import Link from 'next/link'
+import Categories from '../section/Categories'
 
 const Home: NextPage = () => {
 
@@ -19,12 +20,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/job-portal.png" />
       </Head>
         <Hero />       
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, recusandae. Ab consequatur, excepturi tempore non cupiditate laudantium impedit vero explicabo sunt atque pariatur. Ducimus quasi corrupti repudiandae aut, error accusantium necessitatibus culpa molestias in vero nostrum tempora inventore, odio, recusandae dolore! Tenetur dicta corrupti placeat voluptates modi delectus rem quo?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, recusandae. Ab consequatur, excepturi tempore non cupiditate laudantium impedit vero explicabo sunt atque pariatur. Ducimus quasi corrupti repudiandae aut, error accusantium necessitatibus culpa molestias in vero nostrum tempora inventore, odio, recusandae dolore! Tenetur dicta corrupti placeat voluptates modi delectus rem quo?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, recusandae. Ab consequatur, excepturi tempore non cupiditate laudantium impedit vero explicabo sunt atque pariatur. Ducimus quasi corrupti repudiandae aut, error accusantium necessitatibus culpa molestias in vero nostrum tempora inventore, odio, recusandae dolore! Tenetur dicta corrupti placeat voluptates modi delectus rem quo?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, recusandae. Ab consequatur, excepturi tempore non cupiditate laudantium impedit vero explicabo sunt atque pariatur. Ducimus quasi corrupti repudiandae aut, error accusantium necessitatibus culpa molestias in vero nostrum tempora inventore, odio, recusandae dolore! Tenetur dicta corrupti placeat voluptates modi delectus rem quo?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, recusandae. Ab consequatur, excepturi tempore non cupiditate laudantium impedit vero explicabo sunt atque pariatur. Ducimus quasi corrupti repudiandae aut, error accusantium necessitatibus culpa molestias in vero nostrum tempora inventore, odio, recusandae dolore! Tenetur dicta corrupti placeat voluptates modi delectus rem quo?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, recusandae. Ab consequatur, excepturi tempore non cupiditate laudantium impedit vero explicabo sunt atque pariatur. Ducimus quasi corrupti repudiandae aut, error accusantium necessitatibus culpa molestias in vero nostrum tempora inventore, odio, recusandae dolore! Tenetur dicta corrupti placeat voluptates modi delectus rem quo?</p>
+        <Categories />
     </div>
   )
 }

@@ -22,7 +22,7 @@ const  SideDrawer: NextPage<drawerType> = ({sideDrawer , setSideDrawer})=> {
 
   return (
     <div>
-      <div className={sideDrawer ? '  transition-all  ease-in delay-150 transform -translate-x-[0%] z-50 top-0 fixed border-2  border-r-light_green  left-0 w-[250px] bg-light_white h-[100vh] shadow-md ' : 'fixed transform transition-all  ease-in delay-150 -translate-x-[100%] z-50 top-0 left-0 w-[250px] bg-light_white h-[100vh] shadow-md '}>
+      <div className={sideDrawer ? '  transition-all  ease-in delay-150 transform -translate-x-[0%] z-50 top-0 fixed  left-0 w-[250px] bg-light_white h-[100vh] shadow-md ' : 'fixed transform transition-all  ease-in delay-150 -translate-x-[100%] z-50 top-0 left-0 w-[250px] bg-light_white h-[100vh] shadow-md '}>
           
 
           <div>
