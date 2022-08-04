@@ -12,7 +12,7 @@ interface categoriesType {
 
 const CategoriesSingle: NextPage<categoriesType> = ({ categories }) => {
   return (
-    <div className="   w-full py-4  px-7">
+    <div className="   w-full py-4  px-7 mb-3">
       <div className="flex  bg-light_white py-4 translate-y-2 hover:-translate-y-2 transition-all group ease-linear delay-200   items-center border-[1px] rounded-md border-[#eee8e8]">
         <div
           style={{
@@ -28,7 +28,7 @@ const CategoriesSingle: NextPage<categoriesType> = ({ categories }) => {
             {categories.name}
           </h3>
           <p className="text-md">
-            ( {categories.openPosition} is open position)
+            ( {categories.openPosition} is open position )
           </p>
         </div>
       </div>

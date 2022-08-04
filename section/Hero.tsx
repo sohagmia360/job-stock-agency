@@ -13,7 +13,7 @@ interface drawerType {
 
 const Hero: NextPage = () => {
   return (
-    <div className="bg-[#F3F5F0] relative  after:bg-light_green after:absolute after:w-[70%] after:h-[60%] after:top-[20%] after:left-[30%] after:blur-[90px] after:opacity-[.1] w-full h-full ">
+    <div className="bg-[#F3F5F0] relative  after:bg-[#00ca9752] after:absolute after:w-[70%] after:h-[60%] after:top-[20%] after:left-[30%] after:blur-[99px] after:opacity-[.1] after:pointer-events-none w-full h-full ">
       <div className="flex px-6 md:px-2  items-center justify-between w-full  flex-col py-[150px] text-center line">
         <div className="relative hidden lg:block w-full h-full">
            <span className="absolute right-[3%]  sm:right-[5%]   lg:right-[10%] bottom-[-10px] md:bottom-[-40px] ">

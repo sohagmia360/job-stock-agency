@@ -5,15 +5,15 @@ import { BiChevronRight } from "react-icons/bi";
 
 const Categories: NextPage = () => {
   return (
-    <div className="mt-24">
-      <div className=" wContainer  relative  after:w-[40px] after:h-[40px] after:absolute after:top-[0%] after:right-[30%] after:rounded-full before:w-[40px] before:h-[40px] before:absolute before:rounded-full   before:bg-light_green before:top-0 before:right-[30%] before:animate-ping  after:blur-[5px]  after:bg-light_green after:scale-50">
+    <div className="mt-20">
+      <div className=" wContainer  relative  after:w-[40px] after:h-[40px] after:absolute md:after:top-[0%] after:top-[-5%] md:after:right-[20%] after:right-[20%] lg:after:right-[30%]  after:rounded-full before:w-[40px] before:h-[40px] before:absolute before:rounded-full   before:bg-light_green md:before:top-0 before:top-[-5%] lg:before:right-[30%] before:right-[20%] md:before:right-[20%] before:animate-ping  after:blur-[5px]  after:bg-light_green after:scale-50">
         <div className="text-center ">
-          <h2 className="text-4xl  font-semibold mb-2">Browse Categories</h2>
+          <h2 className="md:text-4xl text-3xl  font-semibold mb-2">Browse Categories</h2>
           <p className="font-light">
             Most popular categories of portal, sorted by popularity
           </p>
         </div>
-        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 mt-20 gap-7 md:gap-10">
+        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 mt-12 ">
           {CategoriesList.map((cate, index) => (
             <CategoriesSingle key={index} categories={cate} />
           ))}

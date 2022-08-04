@@ -75,7 +75,6 @@ const Header: NextPage<drawerType> = ({ sideDrawer, setSideDrawer }) => {
         <div className="navbar wContainer ">
           <div className="flex-1 cursor-pointer ">
             <a className=" flex items-center justify-center normal-case text-xl">
-              {/* <Image src={Logo} width="100px" height="45px" alt="logo" /> */}
               <span className="text-light_gray_white font-bold text-md sm:text-2xl">
                 <span className="text-light_green">Job</span> Stack
               </span>

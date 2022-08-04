@@ -1,0 +1,18 @@
+.RecentJobPosted{
+
+}
+
+@media (max-width : 1146px) {
+  .statusPart {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+@media (max-width : 816px) {
+  .informationPart {
+    flex-direction: column;
+  }
+  .pricePart{
+    margin-top:10px ;
+  }
+}
