@@ -82,12 +82,12 @@ const Header: NextPage<drawerType> = ({ sideDrawer, setSideDrawer }) => {
             <div
               className={` ${styles.HeaderMenu} flex text-light_gray_white items-center gap-8 font-normal text-[1.2rem] ml-10 `}
             >
-              {menuList.map((m) => {
+              {menuList.map((m, index) => {
                 if (m.subMenu) {
-                  return <NavMenu m={m} />;
+                  return <NavMenu key={index} m={m} />;
                 } else {
                   return (
-                    <div className="py-3">
+                    <div key={index} className="py-3">
                       <Link key={m.menu} href="/">
                         {m.menu}
                       </Link>

@@ -12,6 +12,7 @@ import RecentJobPosted from "../section/RecentJobPosted";
 import PricingPlan from "../section/PricingPlan";
 import HowItWorks from "../section/HowItWorks";
 import Footer from "../section/Footer";
+import TopCompanyRegistered from "../section/TopCompanyRegistered";
 
 const Home: NextPage = () => {
   return (
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
       <RecentJobPosted />
       <PricingPlan />
       <HowItWorks />
+      <TopCompanyRegistered />
       <Footer />
     </div>
   );
