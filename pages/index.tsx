@@ -13,6 +13,7 @@ import PricingPlan from "../section/PricingPlan";
 import HowItWorks from "../section/HowItWorks";
 import Footer from "../section/Footer";
 import TopCompanyRegistered from "../section/TopCompanyRegistered";
+import LetEmployersFindYou from "../section/LetEmployersFindYou";
 
 const Home: NextPage = () => {
   return (
@@ -28,6 +29,7 @@ const Home: NextPage = () => {
       <PricingPlan />
       <HowItWorks />
       <TopCompanyRegistered />
+      <LetEmployersFindYou />
       <Footer />
     </div>
   );

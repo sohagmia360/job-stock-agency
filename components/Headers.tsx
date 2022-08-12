@@ -100,9 +100,7 @@ const Header: NextPage<drawerType> = ({ sideDrawer, setSideDrawer }) => {
           <div className="flex-none gap-2 transition-all  ease-in delay-150">
             <div className=" mr-4">
               <button className="bg-transparent border-2 border-light_green  text-light_gray_white px-3 py-1 font-bold text-lg rounded-lg relative after:absolute after:w-full after:h-full after:bg-light_green after:rounded-lg after:top-0 after:left-0 transform after:scale-50 after:opacity-0 hover:after:opacity-100 hover:after:scale-100 transition-all ease-in delay-100 hover:after:transition-all hover:after:ease-in after:transition-all after:ease-in after:delay-100 hover:text-light_white hover:after:delay-100 z-20 after:-z-10  hover:border-transparent flex items-center ">
-                <span className=" hidden sm:block transition-all ease-in delay-150">
-                  Login
-                </span>{" "}
+                <span className=" hidden sm:block ">Login</span>{" "}
                 <MdOutlineLogin className="text-xl" />{" "}
               </button>
             </div>
@@ -145,7 +143,7 @@ const Header: NextPage<drawerType> = ({ sideDrawer, setSideDrawer }) => {
                   profile ? styles.profileEnable : styles.profileDisable
                 }
               >
-                <li className="">
+                <li className="border-b-[1px] border-[#F0F0F0]">
                   <a className="">
                     <span className="bg-[#F0F0F0] rounded-full p-2">
                       <RiDashboardLine className="text-xl" />
@@ -153,7 +151,7 @@ const Header: NextPage<drawerType> = ({ sideDrawer, setSideDrawer }) => {
                     Dashboard
                   </a>
                 </li>
-                <li>
+                <li className="border-b-[1px] border-[#F0F0F0]">
                   <a className="">
                     <span className="bg-[#F0F0F0] rounded-full p-2">
                       <BiHandicap className="text-xl" />
@@ -161,7 +159,7 @@ const Header: NextPage<drawerType> = ({ sideDrawer, setSideDrawer }) => {
                     Manage Jobs Post
                   </a>
                 </li>
-                <li>
+                <li className="border-b-[1px] border-[#F0F0F0]">
                   <a className="">
                     <span className="bg-[#F0F0F0] rounded-full p-2">
                       <FiUsers className="text-xl" />
@@ -169,7 +167,7 @@ const Header: NextPage<drawerType> = ({ sideDrawer, setSideDrawer }) => {
                     Manage Jobs
                   </a>
                 </li>
-                <li>
+                <li className="border-b-[1px] border-[#F0F0F0]">
                   <a className="">
                     <span className="bg-[#F0F0F0] rounded-full p-2">
                       <AiOutlineStar className="text-xl" />
@@ -177,7 +175,7 @@ const Header: NextPage<drawerType> = ({ sideDrawer, setSideDrawer }) => {
                     Bookmarks Jobs
                   </a>
                 </li>
-                <li>
+                <li className="border-b-[1px] border-[#F0F0F0]">
                   <a className="">
                     <span className="bg-[#F0F0F0] rounded-full p-2">
                       <FaUserSecret className="text-xl" />
@@ -185,7 +183,7 @@ const Header: NextPage<drawerType> = ({ sideDrawer, setSideDrawer }) => {
                     My Profile
                   </a>
                 </li>
-                <li>
+                <li className="">
                   <a className="">
                     <span className="bg-[#F0F0F0] rounded-full p-2 rotate-[90deg]">
                       <AiOutlineLogin className="text-xl" />

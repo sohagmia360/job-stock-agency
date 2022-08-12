@@ -5,7 +5,7 @@ import building from "../assets/buildings.png";
 import Image from "next/image";
 const TopCompanyRegistered: NextPage = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-32">
       <div className="wContainer text-center">
         <h2 className="text-3xl font-bold mb-4 ">Top Company Registered </h2>
         <p>

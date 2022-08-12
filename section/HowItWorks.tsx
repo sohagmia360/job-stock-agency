@@ -25,7 +25,7 @@ const HowItWorks: NextPage = () => {
           </div>
           <div className="flex flex-col items-center text-center px-5">
             <FiSearch className="text-6xl text-light_green mb-4" />
-            <h3 className="text-xl font-bold mb-2">Create an Account</h3>
+            <h3 className="text-xl font-bold mb-2">Search Jobs</h3>
             <p>
               Post a job to tell us about your project. We will quickly match
               you with t right freelancers find place best.
@@ -33,7 +33,7 @@ const HowItWorks: NextPage = () => {
           </div>
           <div className="flex flex-col items-center text-center px-5">
             <GiTrophyCup className="text-6xl text-light_green mb-4" />
-            <h3 className="text-xl font-bold mb-2">Create an Account</h3>
+            <h3 className="text-xl font-bold mb-2">Apply</h3>
             <p>
               Post a job to tell us about your project. We will quickly match
               you with t right freelancers find place best.
